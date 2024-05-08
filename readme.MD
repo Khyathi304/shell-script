@@ -9,3 +9,5 @@
 * push the changes to github / central repo.
 
 **Naming convention: use small case with Hyphons(-). No Spaces**
+
+git add . ; git commit -m "some-message" ; git push -m origin main
