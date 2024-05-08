@@ -10,4 +10,4 @@
 
 **Naming convention: use small case with Hyphons(-). No Spaces**
 
-git add . ; git commit -m "some-message" ; git push -m origin main
+git add . ; git commit -m "some-message" ; git push origin main
