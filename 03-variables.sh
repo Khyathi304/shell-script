@@ -1,9 +1,9 @@
 #!/bin/bash
 
-person1=$Ramesh
-person2=$Suresh
+PERSON1=Ramesh
+PERSON2=Suresh
 
-echo " $person1:: Hello $person2, How are you?"
-echo " $person2:: Hi $person1, I am fine, How are you?"
-echo " $person1:: I am fine too, How is your work?"
-echo " $person2:: I am thinking to upgrade to DevOps"
+echo " $PERSON1:: Hello $PERSON2, How are you?"
+echo " $PERSON2:: Hi $PERSON1, I am fine, How are you?"
+echo " $PERSON1:: I am fine too, How is your work?"
+echo " $PERSON2:: I am thinking to upgrade to DevOps"
