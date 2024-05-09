@@ -2,7 +2,8 @@
 
 person1=$Ramesh
 person2=$Suresh
-echo " Ramesh:: Hello Suresh, How are you?"
-echo " Suresh:: Hi Ramesh, I am fine, How are you?"
-echo " Ramesh:: I am fine too, How is your work?"
-echo "Suresh:: I am thinking to upgrade to DevOps"
+
+echo " $person1:: Hello $person2, How are you?"
+echo " $person2:: Hi $person1, I am fine, How are you?"
+echo " $person1:: I am fine too, How is your work?"
+echo " $person2:: I am thinking to upgrade to DevOps"
