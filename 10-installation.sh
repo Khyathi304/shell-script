@@ -10,3 +10,5 @@ else
 echo "You are super User"
 fi
 dnf install mysql -y
+
+echo "Is Script Proceeding"
