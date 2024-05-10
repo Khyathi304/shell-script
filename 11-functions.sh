@@ -10,7 +10,7 @@ VALIDATE(){
     if [ $1 -eq 0 ]
     then
         echo "$2... Success"
-        exit 0
+        exit 1
     else
         echo "$2... Failure"
         fi
