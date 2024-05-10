@@ -10,4 +10,4 @@ else
 echo "You are super User"
 fi
 
-echo "All packages $@"
+echo "All packages: $@"
