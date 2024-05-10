@@ -4,9 +4,12 @@
 USERID=$(id -u)
 
 VALIDATE(){
-    echo "Exit Status: $1"
-    echo "What are you doing"
-
+    if [ $1 -ne 0 ]
+    then
+        echo "$2... Failure"
+        exit 1
+    else
+        echo "$2... Success"
 }
 if [ $USERID -ne 0 ]
 then
