@@ -37,5 +37,4 @@ dnf install git -y &>>$LOGFILE
 
 VALIDATE $? "Installing Git"
 
-echo -e "\e[33m HELLO WORLD"
 
