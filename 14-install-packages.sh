@@ -38,7 +38,7 @@ if [ $? -eq 0 ]
 then
 echo -e "$i is installed.. $Y Skipping $N"
 else
-dnf install &i -y &>>LOGFILE
+dnf install $i -y &>>LOGFILE
 VALIDATE $? "Installation of $i"
 fi
 
