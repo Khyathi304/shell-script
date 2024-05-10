@@ -4,6 +4,10 @@
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 if [ $USERID -ne 0 ]
@@ -22,9 +26,9 @@ echo "Package to install: $i"
 dnf list installed $i &>>LOGFILE
 if [ $? -eq 0 ]
 then
-echo "$i is installed.. Skipping"
+echo -e "$i is installed.. $Y Skipping $N"
 else
-echo "$i is not installed.. Need to install"
+echo -e "$i is not installed.. $R Need to install $N"
 fi
 
 done
