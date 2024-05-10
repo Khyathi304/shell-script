@@ -10,6 +10,16 @@ Y="\e[33m"
 N="\e[0m"
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
+VALIDATE(){
+    if [ $1 -ne 0 ]
+    then
+        echo "$2... $R Failure $N"
+        exit 1
+    else
+        echo "$2... $G Success $N"
+        fi
+}
+
 if [ $USERID -ne 0 ]
 then
 echo "Please run the script with root access"
@@ -28,7 +38,8 @@ if [ $? -eq 0 ]
 then
 echo -e "$i is installed.. $Y Skipping $N"
 else
-echo -e "$i is not installed.. $R Need to install $N"
+dnf install &i -y &>>LOGFILE
+VALIDATE $? "Installation of $i"
 fi
 
 done
