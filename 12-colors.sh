@@ -17,7 +17,7 @@ VALIDATE(){
         echo -e "$2...$R Failure $N"
         exit 1
     else
-        echo -e "$2... "\e[32m Success" $N"
+        echo -e "$2...$G Success $N"
         fi
 }
 if [ $USERID -ne 0 ]
