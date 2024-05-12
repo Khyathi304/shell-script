@@ -2,4 +2,4 @@
 
 COURSE="Devops from Other Script"
 echo "Before calling Other  Sciprt :$COURSE"
-echo "Process ID of current script: $$"
+echo "Process ID of Other script: $$"
