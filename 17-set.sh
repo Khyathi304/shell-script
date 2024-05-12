@@ -11,7 +11,7 @@ else
 echo "You are super User"
 fi
 
-dnf install mysqll -y
+dnf install mysqllsdfgh -y
 
 dnf install git -y
 
