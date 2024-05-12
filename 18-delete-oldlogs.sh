@@ -15,4 +15,6 @@ echo -e "$R Source directory not exists $N"
 exit 1
 fi
 
-FILES=${find $SOURCE_DIRECTORY -name "*.log" -mtime +14}
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
+
+echo "Files to delete: $FILES"
