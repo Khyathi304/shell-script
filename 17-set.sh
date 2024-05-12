@@ -14,7 +14,7 @@ else
 echo "You are super User"
 fi
 
-dnf install mysqfgtl -y
+dnf install mysql -y
 
 dnf install git -y
 
