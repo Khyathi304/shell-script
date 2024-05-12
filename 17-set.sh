@@ -1,6 +1,9 @@
 #!/bin/bash
 
-
+failure(){
+ echo "failes at $1.. $2"
+}
+trap 'failure ${LINENO} "$BASH COMMAND"' ERR
 USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
@@ -11,7 +14,7 @@ else
 echo "You are super User"
 fi
 
-dnf install mysql -y
+dnf install mysqfgtl -y
 
 dnf install git -y
 
