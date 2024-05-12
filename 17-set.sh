@@ -1,7 +1,7 @@
 #!/bin/bash
 
 failure(){
- echo "failes at $1.. $2"
+ echo "failed at $1.. $2"
 }
 trap 'failure ${LINENO} "$BASH COMMAND"' ERR
 USERID=$(id -u)
