@@ -10,4 +10,4 @@ do
 if [ $USAGE -gt 5 ]
 then
 echo "$FOLDER is more than $DISK_THRESHOLD, Usage: $USAGE"
-done <<<$DISK_USAGE
+done <<< $DISK_USAGE
