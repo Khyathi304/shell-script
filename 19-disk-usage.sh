@@ -14,4 +14,4 @@ MESSAGE+="$FOLDER is more than $DISK_THRESHOLD, Usage: $USAGE \n"
 fi
 done <<< $DISK_USAGE
 
-echo "MESSAGE: $MESSAGE"
+echo -e "MESSAGE: $MESSAGE"
